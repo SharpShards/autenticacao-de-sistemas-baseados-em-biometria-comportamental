@@ -1,0 +1,9 @@
+pandas
+polars
+numpy
+scikit-learn
+pandas
+numpy
+scikit-learn
+tabulate
+matplotlib
