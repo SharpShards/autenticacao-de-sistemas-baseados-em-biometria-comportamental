@@ -2,33 +2,52 @@
 
 Este projeto é dividido em duas partes principais:
 
-1. **Model**: Responsável pelo treinamento e avaliação de modelos de machine learning.
-2. **Features**: Focado na coleta, preparação e extração de features a partir dos dados brutos.
+1. **Features**: Focado na coleta, preparação e extração de features a partir dos dados brutos.
+2. **Model**: Responsável pelo treinamento e avaliação de modelos de machine learning.
 
 ## Estrutura do Projeto
 
 project/
-│
-├── model/
-│ ├── main.py
-│ ├── data_processing.py
-│ ├── model_training.py
-│ ├── metrics.py
-│ ├── requirements.txt
-│ └── README.md
-│
-├── features/
-│ ├── main.py
-│ ├── data_collection.py
-│ ├── feature_extraction.py
-│ ├── helper_functions.py
-│ ├── requirements.txt
-│ └── README.md
-│
-├── main.py
-├── README.md
-└── requirements.txt
 
+│
+
+├── model/
+
+│ ├── main.py
+
+│ ├── data_processing.py
+
+│ ├── model_training.py
+
+│ ├── metrics.py
+
+│ ├── requirements.txt
+
+│ └── README.md
+
+│
+
+├── features/
+
+│ ├── main.py
+
+│ ├── data_collection.py
+
+│ ├── feature_extraction.py
+
+│ ├── helper_functions.py
+
+│ ├── requirements.txt
+
+│ └── README.md
+
+│
+
+├── main.py
+
+├── README.md
+
+└── requirements.txt
 
 
 ### 1. Diretório `model/`
