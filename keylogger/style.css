@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap');
+
+:root{
+    --prin_pad: #1DC238;
+    --prin_con: #238433;
+    --sec_pad: #313131;
+    --sec_con: #464646;
+    --detalhes: #FFF;
+    --fundo: #201D1D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    border: none;
+
+    box-sizing: border-box;
+
+    font-family: 'Nunito';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+
+    background-color: var(--fundo);
+
+    padding: 60px;
+
+    position: relative;
+
+    justify-content: center;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+
+    background-color: var(--sec_pad);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--sec_con);
+}
+
+#dvFundo{
+    display: flex;
+
+    height: fit-content;
+    width: 50%;
+
+    background-color: var(--sec_pad);
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    flex-direction: column;
+}
+
+#dvPri{
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#dvPri img{
+    width: 80px;
+}
+
+#dvPri label{
+    font-size: 2.6rem;
+}
+
+#dvPri label span:first-child{
+    color: var(--prin_con);
+}
+
+#dvPri label span:last-child{
+    color: var(--prin_pad);
+}
+
+#dvPri h1{
+    color: var(--detalhes);
+    font-size: 3rem;
+    font-weight: 400;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#dvSeg{
+    flex: 1;
+}
+
+#dvSeg h2,
+#dvTer h2{
+    color: var(--detalhes);
+    font-size: 2rem;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+}
+
+#dvSeg .dvFundo{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#dvSeg .dvFundo .dvSub{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dvSeg .dvFundo .dvSub .dvFundoMoeda{
+    display: flex;
+
+    height: fit-content;
+    
+    background-color: var(--sec_con);
+
+    border-radius: 12px;
+
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dvSeg .dvFundo .dvSub .dvFundoMoeda .dvMoeda{
+    display: flex;
+
+    height: 60px;
+    width: 60px;
+
+    border: 3px solid var(--prin_pad);
+    border-radius: 50%;
+
+    margin-bottom: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#dvSeg .dvFundo .dvSub .dvFundoMoeda .pMoeda{
+    color: var(--prin_pad);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#dvSeg .dvFundo .dvSub .dvFundoMoeda .pNome{
+    font-size: 1.6rem;
+}
+
+#dvSeg .dvFundo .dvSub p{
+    color: var(--detalhes);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(1){
+    flex: 2;
+}
+
+#dvSeg .dvFundo .dvSub label{
+    color: var(--detalhes);
+    font-size: 1.4rem;
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(1) input{
+    height: fit-content;
+    width: 140px;
+
+    background-color: transparent;
+
+    color: var(--prin_pad);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-align: center;
+
+    border: 2px solid var(--prin_con);
+    border-radius: 7px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(2){
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(2) img{
+    height: 40px;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(2) p{
+    color: var(--detalhes);
+    font-size: 1.4rem;
+
+    margin-bottom: 60px;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(3){
+    flex: 2;
+}
+
+#dvSeg .dvFundo .dvSub:nth-child(3) p{
+    font-size: 2.4rem;
+    color: var(--prin_pad);
+}
+
+#dvTer{
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+}
+
+#dvTer h2{
+    margin-top: 60px;
+}
+
+#dvTer .dvSub{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#dvTer .dvSub .dvFundo{
+    display: flex;
+
+    height: fit-content;
+    width: 200px;
+
+    background-color: var(--sec_con);
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dvTer .dvSub .dvFundo:hover{
+    cursor: pointer;
+}
+
+#dvTer .dvSub .dvFundo img{
+    height: 40px;
+}
+
+#dvTer .dvSub .dvFundo p{
+    color: var(--detalhes);
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    margin-top: 10px;
+}
+
+#dvTer .dvSub:nth-child(3){
+    display: flex;
+
+    background-color: var(--sec_con);
+
+    border-radius: 7px;
+
+    margin-top: 40px;
+
+    padding: 20px;
+
+    flex-direction: column;
+}
+
+#dvTer .dvSub:nth-child(3) p{
+    color: var(--detalhes);
+    font-size: 1.2rem;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+#dvTer .dvSub:nth-child(3) div{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+#dvTer .dvSub:nth-child(3) div img{
+    height: 40px;
+
+    border-radius: 50%;
+}
+
+#dvTer .dvSub:nth-child(4){
+    display: flex;
+
+    height: fit-content;
+    width: 100%;
+
+    background-color: var(--sec_con);
+
+    border-radius: 12px;
+
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    padding: 20px;
+
+    flex-direction: column;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub{
+    display: flex;
+
+    margin-bottom: 20px;
+
+    flex-direction: column;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub label{
+    color: var(--detalhes);
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub input{
+    height: fit-content;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    border-radius: 7px;
+
+    padding: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2){
+    display: flex;
+
+    flex-direction: row;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div{
+    display: flex;
+
+    flex-direction: column;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div:nth-child(1){
+    display: flex;
+
+    flex-direction: column;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div:nth-child(1) #dvVenc{
+    display: flex;
+
+    flex-direction: row;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div:nth-child(1) #dvVenc input:first-child{
+    margin-right: 10px;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div:nth-child(1) #txtMes{
+    width: 60px;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div:nth-child(1) #txtAno{
+    width: 80px;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(2) div:nth-child(2) input{
+    width: 80px;
+}
+
+#dvTer .dvSub:nth-child(4) .dvSub:nth-child(3){
+    margin-top: 0px;
+    padding: 0px;
+}
+
+button{
+    width: 260px;
+
+    color: var(--detalhes);
+    font-size: 2rem;
+    font-weight: 700;
+
+    background-color: var(--prin_pad);
+
+    border-radius: 30px;
+
+    margin-inline: auto;
+
+    padding: 10px;
+}
+
+button:hover{
+    background-color: var(--prin_con);
+
+    transition: all 250ms linear;
+
+    cursor: pointer;
+}
+
+#dvCartao{
+    display: flex;
+
+    height: 160px;
+    width: 320px;
+
+    background-color: var(--sec_con);
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    overflow: hidden;
+
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#dvCartao::before{
+    content: '';
+    display: block;
+
+    height: 3px;
+    width: 120%;
+
+    background-color: var(--prin_con);
+
+    position: relative;
+    top: -20px;
+}
+
+#dvCartao label{
+    color: var(--detalhes);
+    font-size: 2rem;
+    font-weight: 300;
+
+    margin-top: 20px;
+}
+
+#dvCartao div{
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Finalizar Compra | Fast Trade</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="form.js" defer></script>
+    <script src="datas.js" defer></script>
+</head>
+<body>
+    <div id="dvFundo">
+        <div id="dvPri">
+            <img src="img/logo.png" alt="Logo Fast Trade">
+            <label><span>Fast</span> <span>Trade</span></label>
+    
+            <h1>Finalização do Pedido</h1>
+        </div>
+
+        <div id="dvSeg">
+            <h2>Conversão</h2>
+
+            <div class="dvFundo">
+                <div class="dvSub">
+                    <div class="dvFundoMoeda">
+                        <div class="dvMoeda">
+                            <p class="pMoeda">R$</p>
+                        </div>
+
+                        <p class="pNome">Reais</p>
+                    </div>
+
+                    <label for="txtValor">Valor</label>
+                    
+                    <input type="text" id="txtValor" name="txtValor" placeholder="R$ 0" autocomplete="off">
+                </div>
+
+                <div class="dvSub">
+                    <img src="img/seta.png" alt="Setas">
+                    <p>Cota: R$2,60</p>
+                </div>
+
+                <div class="dvSub">
+                    <div class="dvFundoMoeda">
+                        <div class="dvMoeda">
+                            <p class="pMoeda">M$</p>
+                        </div>
+
+                        <p class="pNome">Malkoin</p>
+                    </div>
+
+                    <label>Valor</label>
+
+                    <p id="pValorConv">M$ 0,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dvTer">
+            <h2>Método de Pagamento</h2>
+
+            <div class="dvSub">
+                <div id="dvCred" class="dvFundo">
+                    <img src="img/cartao_v.png" alt="Cartão de crédito.">
+                    <p>Crédito</p>
+                </div>
+
+                <div id="dvDeb" class="dvFundo">
+                    <img src="img/cartao_v.png" alt="Cartão de débito.">
+                    <p>Débito</p>
+                </div>
+            </div>
+
+            <div class="dvSub">
+                <p>Só aceitamos os cartões dos bancos abaixo para pagamento:</p>
+
+                <div>
+                    <img src="img/bancobrasil.png" alt="Banco do Brasil">
+                    <img src="img/bradesco.png" alt="Bradesco">
+                    <img src="img/caixa.png" alt="Caixa">
+                    <img src="img/itau.png" alt="Itaú">
+                    <img src="img/nubank.png" alt="Nubank">
+                    <img src="img/santander.png" alt="Santander">
+                </div>
+            </div>
+
+            <div class="dvSub">
+                <div class="dvSub">
+                    <label for="txtNum">Número:</label>
+                    <input type="text" id="txtNum" name="txtNum" placeholder="1589 4658 4653 5985" maxlength="19" autocomplete="off">
+                </div>
+
+                <div class="dvSub">
+                    <div>
+                        <label for="txtMes">Vencimento:</label>
+                        <div id="dvVenc">
+                            <input type="text" id="txtMes" name="txtMes" placeholder="00" maxlength="2" autocomplete="off">
+                            <input type="text" id="txtAno" name="txtAno" placeholder="0000" maxlength="4" autocomplete="off">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="txtCVC">CVC:</label>
+                        <input type="text" id="txtCVC" name="txtCVC" placeholder="000" maxlength="3" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="dvSub">
+                    <label for="txtNom">Nome:</label>
+                    <input type="text" id="txtNom" name="txtNom" placeholder="Theo F B Lima" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        
+        <button>Fazer Pagamento</button>
+    </div>
+
+    <div id="dvCartao">
+        <label id="lblNum"></label>
+
+        <div>
+            <label id="lblVen"></label>
+    
+            <label id="lblCVC"></label>
+        </div>
+    </div>
+</body>
+</html>
