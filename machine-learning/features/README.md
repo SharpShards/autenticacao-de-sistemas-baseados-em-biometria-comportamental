@@ -1,4 +1,4 @@
-# Projeto de Extração de Features de Sessões de Teclado e Mouse
+# Extração de Features de Sessões de Teclado e Mouse
 
 Este projeto é voltado para a coleta, processamento e extração de features de dados coletados durante sessões de uso de teclado e mouse. O objetivo é transformar esses dados em um formato que pode ser utilizado para análises subsequentes, como a classificação de padrões de uso.
 
@@ -7,12 +7,19 @@ Este projeto é voltado para a coleta, processamento e extração de features de
 O projeto está organizado da seguinte maneira:
 
 features/
+
 │
+
 ├── data_collection.py # Script para coleta e preparação dos dados
+
 ├── feature_extraction.py # Script para extração de features
+
 ├── helper_functions.py # Funções auxiliares para normalização e salvamento
+
 ├── main.py # Script principal para orquestrar a execução
+
 ├── requirements.txt # Lista de dependências do projeto
+
 └── README.md # Documentação do projeto
 
 
@@ -55,4 +62,4 @@ Se você deseja contribuir com este projeto, sinta-se à vontade para enviar pul
 Este projeto é licenciado sob a Licença MIT. Sinta-se à vontade para usá-lo e modificá-lo conforme necessário.
 
 ### Contato
-Para mais informações ou perguntas sobre este projeto, você pode entrar em contato por e-mail [seu-email@example.com].
+Para mais informações ou perguntas sobre este projeto, você pode entrar em contato por e-mail [lucas15azevedo@gmail.com].
